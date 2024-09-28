@@ -1,16 +1,19 @@
+
+
 import React from 'react';
 
 interface PetCategoryProps {
   name: string;
   color: string;
-  
 }
 
 const PetCategory: React.FC<PetCategoryProps> = ({ name, color }) => {
   return (
-    <article className={`flex flex-col w-[33%] max-md:ml-0 max-md:w-full px-2`}>
+    <article>
       <div className={`grow px-8 py-6 w-full ${color} rounded-2xl max-md:px-5 max-md:mt-4 max-md:max-w-full`}>
-        <div className="flex gap-5 max-md:flex-col">
+        <div 
+          className="flex gap-5 max-md:flex-col transition-transform duration-300 transform hover:translate-x-2"
+        >
           <div className="flex flex-col w-[55%] max-md:ml-0 max-md:w-full">
             <h2 className="mt-48 text-5xl text-center text-black max-md:mt-10 max-md:text-4xl">
               {name}
