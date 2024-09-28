@@ -69,7 +69,7 @@ export const Menu = ({
   return (
     <nav
       onMouseLeave={() => setActive(null)} // resets the state
-      className="relative rounded-full border border-transparent bg-purple-600 shadow-input flex justify-center space-x-4 px-8 py-6"
+      className="relative rounded-full border border-transparent bg-gradient-to-r from-indigo-500 to-purple-500 shadow-input flex justify-center space-x-4 px-8 py-6"
     >
       {children}
     </nav>
@@ -90,7 +90,7 @@ export const ProductItem = ({
   return (
     <Link href={href} className="flex space-x-2">
       <div>
-        <h4 className="text-xl font-bold mb-1 text-white"> {/* Changed to purple */}
+        <h4 className="text-xl font-bold mb-1 text-white hover:text-purple-950"> {/* Changed to purple */}
           {title}
         </h4>
         <p className="text-purple-950 text-sm max-w-[10rem] dark:text-neutral-300">
