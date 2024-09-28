@@ -1,8 +1,12 @@
 import React from 'react'
+import { GridDogs } from './GridDogs'
 
 const Dogs = () => {
   return (
-    <div>Dogs</div>
+    <div className='my-40'>
+      <GridDogs />
+
+    </div>
   )
 }
 

@@ -1,8 +1,12 @@
 import React from 'react'
+import {  GridCats } from './GridCats'
 
 const Cats = () => {
   return (
-    <div>Cats</div>
+    <div className='my-40'>
+      <GridCats />
+
+    </div>
   )
 }
 
