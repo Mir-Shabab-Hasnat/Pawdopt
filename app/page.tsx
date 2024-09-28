@@ -1,6 +1,9 @@
 
+
 import Hero from "@/components/Hero";
-import { Navbar } from "@/components/ui/NavBar";
+import { Navbar } from "@/components/NavBar";
+import CardCarousel from "@/components/PetCarousel";
+
 
 import Image from "next/image";
 
@@ -10,6 +13,7 @@ export default function Home() {
       <div className="w-full max-w-[1139px] max-md:max-w-full">
         <Navbar />
         <Hero />
+        <CardCarousel />
       </div>
     </div>
   );

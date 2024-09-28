@@ -4,7 +4,7 @@ import MagicButton from "./ui/MagicButton";
 const Hero = () => {
   return (
     <main className="flex overflow-hidden flex-col items-center px-20 py-8 max-md:px-5 max-md:py-24">
-      <header className="flex flex-col justify-center items-center px-20 py-16 w-full bg-gradient-to-r from-indigo-500 to-purple-500 max-w-[1140px] rounded-[51px] max-md:px-5 max-md:max-w-full">
+      <header className="flex flex-col justify-center items-center px-20 py-16 w-full bg-gradient-to-r from-amber-300 to-orange-300 max-w-[1140px] rounded-[51px] max-md:px-5 max-md:max-w-full">
         <img
           loading="lazy"
           src="hero2.png"
