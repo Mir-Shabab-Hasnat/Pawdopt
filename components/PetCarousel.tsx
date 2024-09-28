@@ -1,26 +1,12 @@
 "use client"
 
 import { useRef } from 'react';
+import PetCategory from './PetCategoryCard';
 
-const cards = [
-  {
-    title: "Reptiles",
-    description: "Adopt a scaly and fascinating reptile.",
-    icon: "🐍", // You can replace these with SVGs or images
-    color: "bg-green-300", // Card color
-  },
-  {
-    title: "Birds",
-    description: "Adopt a beautiful and intelligent avian friend.",
-    icon: "🐦",
-    color: "bg-pink-300", // Card color
-  },
-  {
-    title: "Cats",
-    description: "Adopt a cuddly and independent feline.",
-    icon: "🐱",
-    color: "bg-yellow-300", // Card color
-  },
+const petCategories = [
+  { name: 'Cats', color: 'bg-green-200 transition-colors duration-300 hover:bg-green-400'},
+  { name: 'Dogs', color: 'bg-amber-200 transition-colors duration-300 hover:bg-amber-400'},
+  { name: 'Other', color: 'bg-rose-200 transition-colors duration-300 hover:bg-rose-400'}
 ];
 
 const CardCarousel: React.FC = () => {
@@ -36,16 +22,9 @@ const CardCarousel: React.FC = () => {
 
   return (
     <div className="flex overflow-x-scroll scrollbar-hide" ref={carouselRef} onMouseMove={handleDrag}>
-      {cards.map((card, index) => (
-        <div 
-          key={index} 
-          className={`min-w-[200px] max-w-[300px] ${card.color} m-4 p-4 rounded-lg shadow-lg flex flex-col items-center`}
-        >
-          <div className="text-5xl">{card.icon}</div>
-          <h2 className="text-xl font-bold">{card.title}</h2>
-          <p>{card.description}</p>
-        </div>
-      ))}
+      {petCategories.map((category, index) => (
+            <PetCategory key={index} name={category.name} color={category.color} />
+          ))}
     </div>
   );
 };
