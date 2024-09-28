@@ -80,12 +80,12 @@ export const ProductItem = ({
   title,
   description,
   href,
-  src,
+  
 }: {
   title: string;
   description: string;
   href: string;
-  src: string;
+  
 }) => {
   return (
     <Link href={href} className="flex space-x-2">
