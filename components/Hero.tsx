@@ -15,14 +15,16 @@ const Hero = () => {
               <MagicButton title="Our Services" icon={<FaLocationArrow />} position="right"/>
             </div>
           </div>
-          <div className="flex flex-col ml-5 w-6/12 max-md:ml-0 max-md:w-full">
-            <img
-              loading="lazy"
-              src="cool.png"
-              className="object-contain w-full aspect-square max-md:mt-10 max-md:max-w-full max-sm:mt-4"
-              alt="Adorable pet ready for adoption"
-            />
-          </div>
+          <div className="flex flex-col ml-5 w-[55%] max-md:ml-0 max-md:w-full">
+        <div className="flex flex-col grow justify-center px-16 py-16 w-full  bg-gradient-to-r from-indigo-500 to-purple-500 rounded-[51px] max-md:px-5 max-md:mt-10 max-md:max-w-full max-sm:pt-5 max-sm:pb-7 max-sm:mb-0">
+          <img
+            loading="lazy"
+            src="hero2.png"
+            alt="Adorable pet ready for adoption"
+            className="object-contain w-full aspect-[2.16] max-md:max-w-full"
+          />
+        </div>
+      </div>
         </div>
       );
     }
