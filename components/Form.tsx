@@ -58,7 +58,14 @@ export function AdoptionForm({ initialPet }: AdoptionFormProps) {
     await fetch("/api/email", {
       method: "POST",
       body: JSON.stringify({
-        name: "Shabab"
+        name: formData.name,
+        email: formData.email,
+        contact: formData.contact,
+        address: formData.address,
+        reason: formData.address,
+        petType: formData.petType,
+        petName: formData.petName,
+        breed: formData.breed
       })
     })
 

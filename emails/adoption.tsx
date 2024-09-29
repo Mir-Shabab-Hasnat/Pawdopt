@@ -16,32 +16,31 @@ import * as React from "react";
 
 interface WelcomeEmailProps {
   name: string;
+
+  petType: string;
+  petName: string;
+  breed: string;
 }
 
 const baseUrl = process.env.VERCEL_URL
   ? `https://${process.env.VERCEL_URL}`
   : "";
 
-export const AdoptionSentEmail = ({name}: WelcomeEmailProps) => {
-  
-
+export const AdoptionSentEmail = ({
+  name,
+  petName,
+  petType,
+  breed,
+}: WelcomeEmailProps) => {
   return (
     <Html>
       <Head />
       <Preview>Adoption Application Sent!</Preview>
       <Body style={main}>
         <Container>
-          <Section style={logo}>
-            <Img src={`${baseUrl}/static/yelp-logo.png`} />
-          </Section>
-
           <Section style={content}>
             <Row>
-              <Img
-                style={image}
-                width={620}
-                src={`${baseUrl}/static/yelp-header.png`}
-              />
+              <Img style={image} width={620} src="Pawdopt.png" />
             </Row>
 
             <Row style={{ ...boxInfos, paddingBottom: "0" }}>
@@ -67,56 +66,71 @@ export const AdoptionSentEmail = ({name}: WelcomeEmailProps) => {
                 </Heading>
 
                 <Text style={paragraph}>
-                  <b>Name of Pet: </b>
-                  
+                  <b>Name of Pet: </b> {petName}
                 </Text>
                 <Text style={{ ...paragraph, marginTop: -5 }}>
-                  <b>Breed: </b>
-                  
+                  <b>Breed: </b> {breed}
                 </Text>
                 <Text style={{ ...paragraph, marginTop: -5 }}>
-                  <b>Animal: </b>
-                  
+                  <b>Animal: </b> {petType}
                 </Text>
-                
 
                 <Text style={paragraph}>
-                  If this was you, there's nothing else you need to do.
+                  Thank you so much for choosing to adopt through Pawdopt! We're
+                  thrilled to let you know that your application has been
+                  received, and we couldn’t be happier to introduce you to your
+                  potential new family member!
                 </Text>
+
+                <Text style={paragraph}>
+                  <b>A Message from {petName} </b>
+                </Text>
+
                 <Text style={{ ...paragraph, marginTop: -5 }}>
-                  If this wasn't you or if you have additional questions, please
-                  see our support page.
+                  “Hi {name}! I’m so excited that you’ve taken an interest in
+                  me! I may not be able to type this myself (because, you know,
+                  paws), but the lovely humans at Pawdopt wanted me to tell you
+                  that I can’t wait to meet you! I think we could make the
+                  perfect team. I’m ready to find my forever home, and I hope
+                  that’s with you! Thank you for giving me a chance.”
                 </Text>
+
+                <Text style={paragraph}>
+                  <b>What Happens next? </b>
+                </Text>
+
+                <Text style={{ ...paragraph, marginTop: -5 }}>
+                  
+                  Our team will review your application carefully
+                  to ensure the best match for both you and {petName}. In the
+                  meantime, feel free to visit our website for more details
+                  about the adoption process or contact us if you have any
+                  questions. 
+                </Text>
+
+                <Text style={{ ...paragraph, marginTop: -5 }}>
+                  We’ll be in touch soon with the next steps. Fingers
+                  (and paws) crossed! 🐾 With excitement and warm regards, 
+                  
+                </Text>
+
+                <Text style={{ ...paragraph, marginTop: -5 }}>
+                The
+                Pawdopt Team
+                  
+                </Text>
+
+                
+
+                
               </Column>
             </Row>
-            
           </Section>
-
-          <Section style={containerImageFooter}>
-            <Img
-              style={image}
-              width={620}
-              src={`${baseUrl}/static/yelp-footer.png`}
-            />
-          </Section>
-
-          <Text
-            style={{
-              textAlign: "center",
-              fontSize: 12,
-              color: "rgb(0,0,0, 0.7)",
-            }}
-          >
-            © 2022 | Yelp Inc., 350 Mission Street, San Francisco, CA 94105,
-            U.S.A. | www.yelp.com
-          </Text>
         </Container>
       </Body>
     </Html>
   );
 };
-
-
 
 export default AdoptionSentEmail;
 

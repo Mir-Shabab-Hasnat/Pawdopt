@@ -8,13 +8,16 @@ import AdoptionSentEmail from "@/emails/adoption";
 const resend = new Resend("re_NNpH8imd_HCydv7Vn24aZqwmsQEDTeuja")
 
 export async function POST(request: Request) {
-    const {name} = await request.json()
+    const {name, email, petName, petType, breed} = await request.json()
     await resend.emails.send({
         from: 'onboarding@resend.dev',
-        to: 'shababhasnat@gmail.com',
+        to: email,
         subject: 'Thank you for your Pawdoption Application!',
         react:  AdoptionSentEmail({
             name,
+            petName,
+            petType,
+            breed,
         }),
       });
 
