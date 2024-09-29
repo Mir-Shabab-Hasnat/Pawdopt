@@ -27,7 +27,7 @@ export const MenuItem = ({
     <div onMouseEnter={() => setActive(item)} className="relative ">
       <motion.p
         transition={{ duration: 0.3 }}
-        className="cursor-pointer text-white hover:opacity-[0.9]" // Changed to purple
+        className="cursor-pointer text-white text-xs md:text-base hover:opacity-[0.9]" // Changed to purple
       >
         {item}
       </motion.p>
@@ -42,11 +42,11 @@ export const MenuItem = ({
               <motion.div
                 transition={transition}
                 layoutId="active" // layoutId ensures smooth animation
-                className="bg-orange-300 backdrop-blur-sm rounded-2xl overflow-hidde shadow-xl"
+                className="bg-orange-300 backdrop-blur-sm rounded-2xl overflow-hidden shadow-xl"
               >
                 <motion.div
                   layout // layout ensures smooth animation
-                  className="w-max h-full p-4"
+                  className="w-max md:w-max h-full p-4"
                 >
                   {children}
                 </motion.div>
@@ -88,9 +88,9 @@ export const ProductItem = ({
   
 }) => {
   return (
-    <Link href={href} className="flex space-x-2">
+    <Link href={href} className="flex space-x-2 w-[30vw] md:w-full">
       <div>
-        <h4 className="text-xl font-bold mb-1 text-white hover:text-purple-950"> {/* Changed to purple */}
+        <h4 className="text-lg md:text-xl font-bold mb-1 text-white hover:text-purple-950"> {/* Changed to purple */}
           {title}
         </h4>
         <p className="text-purple-950 text-sm max-w-[10rem] dark:text-neutral-300">

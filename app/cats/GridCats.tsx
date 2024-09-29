@@ -3,11 +3,13 @@ import Image from "next/image";
 import React, { useEffect, useId, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { useOutsideClick } from "@/hooks/use-outside-click";
-import { catCards as cards} from "@/data";
-
+import { catCards as cards } from "@/data";
+import Link from "next/link";
 
 export function GridCats() {
-  const [active, setActive] = useState<(typeof cards)[number] | boolean | null>(null);
+  const [active, setActive] = useState<(typeof cards)[number] | boolean | null>(
+    null
+  );
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedBreed, setSelectedBreed] = useState("");
   const [sortOption, setSortOption] = useState("");
@@ -146,17 +148,26 @@ export function GridCats() {
                     </motion.p>
                   </div>
 
-                  <motion.a
-                    layout
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    exit={{ opacity: 0 }}
-                    href={active.ctaLink}
-                    target="_blank"
-                    className="px-4 py-3 text-sm rounded-full font-bold bg-green-500 text-white"
+                  <Link
+                    href={{
+                      pathname: "/adoption-form",
+                      query: {
+                        type: "cat",
+                        title: active.title,
+                        breed: active.breed,
+                      }, // Add 'type' (cat or dog)
+                    }}
                   >
-                    {active.ctaText}
-                  </motion.a>
+                    <motion.a
+                      layout
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      exit={{ opacity: 0 }}
+                      className="px-4 py-3 text-sm rounded-full font-bold bg-green-500 text-white"
+                    >
+                      {active.ctaText}
+                    </motion.a>
+                  </Link>
                 </div>
                 <div className="pt-4 relative px-4">
                   <motion.div
@@ -240,5 +251,3 @@ export const CloseIcon = () => {
     </motion.svg>
   );
 };
-
-

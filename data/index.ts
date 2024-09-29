@@ -5,7 +5,7 @@ export const dogCards = [
       description: "Loyal and highly intelligent breed.",
       src: "/cool.png",
       ctaText: "Adopt",
-      ctaLink: "https://www.dogfinder.com/shepherds",
+      ctaLink: "/adoption-form",
       content: "Some more detailed information about the breed.",
     },
     {
@@ -14,7 +14,7 @@ export const dogCards = [
       description: "Friendly and great with children.",
       src: "/cool.png",
       ctaText: "Adopt",
-      ctaLink: "https://www.dogfinder.com/retrievers",
+      ctaLink: "/adoption-form",
       content: "Some more detailed information about the breed.",
     },
     
@@ -27,7 +27,7 @@ export const dogCards = [
       description: "Loyal and highly intelligent breed.",
       src: "/cool.png",
       ctaText: "Adopt",
-      ctaLink: "https://www.dogfinder.com/shepherds",
+      ctaLink: "/adoption-form",
       content: "Some more detailed information about the breed.",
     },
     {
@@ -36,7 +36,7 @@ export const dogCards = [
       description: "Friendly and great with children.",
       src: "/cool.png",
       ctaText: "Adopt",
-      ctaLink: "https://www.dogfinder.com/retrievers",
+      ctaLink: "/adoption-form",
       content: "Some more detailed information about the breed.",
     },
     

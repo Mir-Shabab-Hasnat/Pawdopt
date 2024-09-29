@@ -91,7 +91,6 @@ export const InfiniteMovingCards = ({
             className="w-[90vw] max-w-full relative rounded-2xl flex-shrink-0 p-5 md:p-16 md:w-[30vw]"
             style={{
               background: "#a855f7",
-              backgroundColor: "linear-gradient(90deg, #8b5cf6, #a855f7);",
             }}
             key={item.name}
           >
