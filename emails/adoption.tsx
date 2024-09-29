@@ -22,9 +22,7 @@ interface WelcomeEmailProps {
   breed: string;
 }
 
-const baseUrl = process.env.VERCEL_URL
-  ? `https://${process.env.VERCEL_URL}`
-  : "";
+
 
 export const AdoptionSentEmail = ({
   name,
@@ -39,9 +37,7 @@ export const AdoptionSentEmail = ({
       <Body style={main}>
         <Container>
           <Section style={content}>
-            <Row>
-              <Img style={image} width={620} src="Pawdopt.png" />
-            </Row>
+            
 
             <Row style={{ ...boxInfos, paddingBottom: "0" }}>
               <Column>
