@@ -14,29 +14,16 @@ import {
 } from "@react-email/components";
 import * as React from "react";
 
-interface YelpRecentLoginEmailProps {
-  userFirstName?: string;
-  loginDate?: Date;
-  loginDevice?: string;
-  loginLocation?: string;
-  loginIp?: string;
+interface WelcomeEmailProps {
+  name: string;
 }
 
 const baseUrl = process.env.VERCEL_URL
   ? `https://${process.env.VERCEL_URL}`
   : "";
 
-export const YelpRecentLoginEmail = ({
-  userFirstName,
-  loginDate,
-  loginDevice,
-  loginLocation,
-  loginIp,
-}: YelpRecentLoginEmailProps) => {
-  const formattedDate = new Intl.DateTimeFormat("en", {
-    dateStyle: "long",
-    timeStyle: "short",
-  }).format(loginDate);
+export const AdoptionSentEmail = ({name}: WelcomeEmailProps) => {
+  
 
   return (
     <Html>
@@ -66,7 +53,7 @@ export const YelpRecentLoginEmail = ({
                     textAlign: "center",
                   }}
                 >
-                  Hi {userFirstName},
+                  Hi {name},
                 </Heading>
                 <Heading
                   as="h2"
@@ -129,15 +116,9 @@ export const YelpRecentLoginEmail = ({
   );
 };
 
-YelpRecentLoginEmail.PreviewProps = {
-  userFirstName: "Alan",
-  loginDate: new Date("September 7, 2022, 10:58 am"),
-  loginDevice: "Chrome on Mac OS X",
-  loginLocation: "Upland, California, United States",
-  loginIp: "47.149.53.167",
-} as YelpRecentLoginEmailProps;
 
-export default YelpRecentLoginEmail;
+
+export default AdoptionSentEmail;
 
 const main = {
   backgroundColor: "#fff",

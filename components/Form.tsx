@@ -54,14 +54,13 @@ export function AdoptionForm({ initialPet }: AdoptionFormProps) {
       breed,
     };
 
-    // Send form data via email (example implementation)
-    await fetch("/api/send-email", {
+    // Send form data via email 
+    await fetch("/api/email", {
       method: "POST",
-      body: JSON.stringify(formData),
-      headers: {
-        "Content-Type": "application/json",
-      },
-    });
+      body: JSON.stringify({
+        name: "Shabab"
+      })
+    })
 
     alert("Form submitted!");
 
