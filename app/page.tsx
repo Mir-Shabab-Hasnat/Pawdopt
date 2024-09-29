@@ -1,12 +1,10 @@
 
 
-import Feedback from "@/components/Feedback";
+import Review from "@/components/Feedback";
 import Hero from "@/components/Hero";
 
 import CardCarousel from "@/components/PetCarousel";
 
-
-import Image from "next/image";
 
 export default function Home() {
   return (
@@ -15,7 +13,7 @@ export default function Home() {
         
         <Hero />
         <CardCarousel />
-        <Feedback />
+        <Review />
       </div>
     </div>
   );

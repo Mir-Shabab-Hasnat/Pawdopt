@@ -41,3 +41,11 @@ export const dogCards = [
     },
     
   ];
+
+  export const stories = [
+    {
+      quote: "something",
+      name: "Jack",
+      title: "Adoption of Dog"
+    }
+  ]
