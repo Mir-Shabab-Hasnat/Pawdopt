@@ -29,26 +29,35 @@ const CardCarousel: React.FC = () => {
   };
 
   return (
-    <div
-      id="adopt"
-      className="flex items-center justify-center overflow-x-scroll scrollbar-hide"
-      ref={carouselRef}
-      onMouseMove={handleDrag}
-    >
-      {petCategories.map((category, index) => (
-        <Link
-          href={category.link}
-          key={index}
-          passHref
-          className={`flex flex-col w-[33%] max-md:ml-0 max-md:w-full px-2`}
-        >
-          <PetCategory
+    <div id="adopt">
+      <div className="py-10">
+        <div className="bg-sky-400 rounded-3xl md:rounded-full px-6 py-4">
+          <h1 className="font-bold text-2xl md:text-4xl text-center text-white">
+            Browse pets from all over your local community
+          </h1>
+        </div>
+      </div>
+
+      <div
+        className="flex items-center justify-center overflow-x-scroll scrollbar-hide"
+        ref={carouselRef}
+        onMouseMove={handleDrag}
+      >
+        {petCategories.map((category, index) => (
+          <Link
+            href={category.link}
             key={index}
-            name={category.name}
-            color={category.color}
-          />
-        </Link>
-      ))}
+            passHref
+            className={`flex flex-col w-[33%] max-md:ml-0 max-md:w-full px-2`}
+          >
+            <PetCategory
+              key={index}
+              name={category.name}
+              color={category.color}
+            />
+          </Link>
+        ))}
+      </div>
     </div>
   );
 };
