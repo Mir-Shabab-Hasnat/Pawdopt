@@ -1,7 +1,11 @@
+"use client"
+
 import { FaLocationArrow } from "react-icons/fa6";
 import MagicButton from "./ui/MagicButton";
+import { useRouter } from "next/navigation";
 
 const Hero = () => {
+  const router = useRouter()
   return (
     <main id="home" className="flex overflow-hidden flex-col items-center px-20 py-8 max-md:px-5 max-md:py-24">
       <header className="flex flex-col justify-center items-center px-20 py-16 w-full bg-gradient-to-r from-amber-300 to-orange-300 max-w-[1140px] rounded-[51px] max-md:px-5 max-md:max-w-full">
@@ -20,7 +24,7 @@ const Hero = () => {
           Find Your Purrfect Match – Adopt Love, One Paw at a Time!
         </p>
       </section>
-      <MagicButton title="Our Services" icon={<FaLocationArrow />} position="right"/>
+      <MagicButton handleClick={() => router.push("/adoption-form")} title="Our Services" icon={<FaLocationArrow />} position="right"/>
     </main>
   );
     }

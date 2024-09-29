@@ -37,7 +37,7 @@ function NavbarItem({ className }: { className?: string }) {
           <div className="text-xs md:text-base grid grid-cols-1 md:grid-cols-2 gap-10 p-4">
             <ProductItem
               title="Adoption"
-              href="#adopt"
+              href="/adoption-form"
               description="Adopt animals near you!"
             />
             {/* You can add more ProductItems here for larger screens */}
