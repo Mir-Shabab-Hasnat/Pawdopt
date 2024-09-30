@@ -1,6 +1,8 @@
 
 
 import Review from "@/components/Feedback";
+import Footer from "@/components/Footer";
+
 import Hero from "@/components/Hero";
 
 import CardCarousel from "@/components/PetCarousel";
@@ -14,6 +16,7 @@ export default function Home() {
         <Hero />
         <CardCarousel />
         <Review />
+        <Footer />
       </div>
     </div>
   );

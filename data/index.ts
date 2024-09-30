@@ -93,3 +93,16 @@ export const dogCards = [
     }
   ];
   
+  export const socialMedia = [
+    
+    {
+      id: 1,
+      img: "/instagram.png",
+      link: "https://www.instagram.com/shabab.hasnat/"
+    },
+    {
+      id: 2,
+      img: "/facebook.png",
+      link: "https://www.facebook.com/shabab.hasnat/"
+    },
+  ];
