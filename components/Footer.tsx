@@ -10,7 +10,7 @@ const Footer = () => {
       
       <div className="flex flex-col items-center ">
         <h1 className="heading lg:max-w-[45vw]">
-          Ready to make a <span className="text-purple-500">difference</span>?
+          Ready to make a <span className="text-rose-500">difference</span>?
         </h1>
         <p className="text-white-200 md:mt-10 my-5 text-center">
           Reach out to us if you have any further questions

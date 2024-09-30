@@ -11,3 +11,5 @@ const Cats = () => {
 }
 
 export default Cats
+
+export const dynamic = "force-dynamic";

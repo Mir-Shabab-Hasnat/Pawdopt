@@ -42,7 +42,7 @@ export const MenuItem = ({
               <motion.div
                 transition={transition}
                 layoutId="active" // layoutId ensures smooth animation
-                className="bg-orange-300 backdrop-blur-sm rounded-2xl overflow-hidden shadow-xl"
+                className="bg-orange-400 backdrop-blur-sm rounded-2xl overflow-hidden shadow-xl"
               >
                 <motion.div
                   layout // layout ensures smooth animation

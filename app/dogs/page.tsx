@@ -11,3 +11,5 @@ const Dogs = () => {
 }
 
 export default Dogs
+
+export const dynamic = "force-dynamic";

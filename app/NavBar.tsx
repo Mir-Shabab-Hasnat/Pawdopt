@@ -24,6 +24,7 @@ function NavbarItem({ className }: { className?: string }) {
             <HoveredLink href="/#adopt">Adopt</HoveredLink>
             <HoveredLink href="/pawdopt-mission">About Us</HoveredLink>
             <HoveredLink href="/#stories">Stories</HoveredLink>
+            <HoveredLink href="/#contact">Contact</HoveredLink>
           </div>
         </MenuItem>
         <MenuItem setActive={setActive} active={active} item="Get Involved">
