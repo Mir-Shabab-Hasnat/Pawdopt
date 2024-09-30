@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React, { Suspense, useEffect, useState } from "react";
 import { AdoptionForm } from "./Form";
 
 const page = () => {
@@ -15,7 +15,9 @@ const page = () => {
                   <span className="text-rose-500">Pawdoption</span>
                 </h1>
               </div>
-              <AdoptionForm />
+              <Suspense fallback={<div>Loading form...</div>}>
+                <AdoptionForm />
+              </Suspense>
             </div>
           </div>
           <div className="flex flex-col ml-5 w-6/12 max-md:ml-0 max-md:w-full">
