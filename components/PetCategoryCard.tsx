@@ -22,7 +22,7 @@ const PetCategory: React.FC<PetCategoryProps> = ({ name, color }) => {
           <div className="flex flex-col ml-5 w-[45%] max-md:ml-0 max-md:w-full">
             <div className="flex flex-col grow max-md:mt-10">
               <img 
-                src="cat-animal.png" 
+                src={name === "Cats" ? "cat-animal.png" : name === "Dogs" ? "dog-head.png" : "default-image.png"} 
                 alt={`${name} icon 1`} 
                 className="object-contain ml-5 w-16 aspect-[1.05] max-md:ml-2.5" 
               />
