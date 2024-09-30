@@ -73,7 +73,7 @@ export function AdoptionForm({ initialPet }: AdoptionFormProps) {
         email: formData.email,
         contact: formData.contact,
         address: formData.address,
-        reason: formData.address,
+        reason: formData.reason,
         petType: formData.petType,
         petName: formData.petName,
         breed: formData.breed,
