@@ -1,7 +1,9 @@
-import { AdoptionForm } from '@/components/Form';
-import React from 'react';
+"use client"
+import React, { useEffect, useState } from 'react';
+import { AdoptionForm } from './Form';
 
 const page = () => {
+  
   return (
     <main className="flex overflow-hidden flex-col justify-center items-center px-16 py-44 bg-white max-md:px-5 max-md:py-24">
       <section className="w-full max-w-[1140px] max-md:max-w-full">

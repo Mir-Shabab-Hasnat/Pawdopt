@@ -41,6 +41,15 @@ export function AdoptionForm({ initialPet }: AdoptionFormProps) {
     }
   }, [petName, petType]);
 
+  useEffect(() => {
+    document.body.style.overflow = "auto"; // Ensure scrolling is enabled
+    return () => {
+      document.body.style.overflow = ""; // Clean up on unmount
+    };
+  }, []);
+
+  
+
   // Submit form function
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
