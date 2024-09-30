@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const AnimalCurelty = () => {
     return (
@@ -20,7 +20,7 @@ const AnimalCurelty = () => {
                 it effectively and promote the welfare of all animals.
               </p>
               <p className="text-lg leading-relaxed mb-4 text-gray-700">
-                <span className="font-bold">Neglect</span> occurs when an animal's basic needs are not met,
+                <span className="font-bold">Neglect</span> occurs when an animal&apos;s basic needs are not met,
                 including food, water, shelter, and medical care. This can lead to
                 severe health issues, suffering, and even death. It is crucial to
                 report any signs of neglect to local authorities to ensure the
@@ -66,7 +66,7 @@ const AnimalCurelty = () => {
             </div>
           </div>
         </div>
-      );
+    );
 }
 
-export default AnimalCurelty
+export default AnimalCurelty;
