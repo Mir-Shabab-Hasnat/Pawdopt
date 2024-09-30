@@ -1,36 +1,31 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Name: Mir Shabab Hasnat
+NSID: pnh498, 
+Student Number: 11369045
+Pawdopt - Pet Adoption Website
+Github: https://github.com/Mir-Shabab-Hasnat/pawdopt
+Live Site: https://pawdopt-cfzs6hqrh-mir-shabab-hasnats-projects.vercel.app/
 
-## Getting Started
-
-First, run the development server:
-
-```bash
+How to Run:
+Unzip the zip to any directory.
+Open command prompt inside the project folder
+Make sure that node is installed in the machine
+Run the following commands one by one:
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+If the above is not working, do the following:
+Go to the terminal inside any directory and write the following commands:
+git clone https://github.com/Mir-Shabab-Hasnat/pawdopt.git
+npm install
+npm run dev
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+To check out the build version of the project, visit the Live Site link provided above.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Project Details
+Front End: Next.js, React, Tailwind CSS, Aceternity UI, Typescript
+Back End: React Email, Resend, Typesctipt
+Project has full fledged backend form submission and email sending functionality.
+Multiple pages and UI components.
+Credits:
+Dummy data was generated using AI
+Images taken from https://www.pexels.com/
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
