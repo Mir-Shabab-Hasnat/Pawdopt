@@ -1,7 +1,8 @@
 
-
+"use client"
 import Review from "@/components/Feedback";
 import Footer from "@/components/Footer";
+import Game from "@/components/Game";
 
 import Hero from "@/components/Hero";
 
@@ -17,6 +18,7 @@ export default function Home() {
         <CardCarousel />
         <Review />
         <Footer />
+        <Game />
       </div>
     </div>
   );

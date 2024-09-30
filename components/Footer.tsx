@@ -6,9 +6,9 @@ import { link } from "fs";
 
 const Footer = () => {
   return (
-    <footer className="w-full pb-10 mb-[100px] md:mb-5" id="contact">
+    <footer className="w-full pt-16 pb-10 mb-[100px] md:mb-5" id="contact" >
       
-      <div className="flex flex-col items-center">
+      <div className="flex flex-col items-center ">
         <h1 className="heading lg:max-w-[45vw]">
           Ready to make a <span className="text-purple-500">difference</span>?
         </h1>
